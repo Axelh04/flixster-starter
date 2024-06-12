@@ -1,0 +1,8 @@
+.left-container {
+  background-color: rgb(190, 190, 190);
+  width: 50%;
+  height: 100vh;
+  margin: 0;
+  display: inline-block;
+  overflow-y:scroll;
+}

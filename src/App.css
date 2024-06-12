@@ -1,15 +1,7 @@
 .App {
-  text-align: center;
-}
-
-.App-header {
-  background-color: #282c34;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-evenly;
-  color: white;
-  padding: 20px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
 
 @media (max-width: 600px) {
@@ -19,7 +11,6 @@
 
   .search-bar {
     flex-direction: column;
-    gap: 10px;
   }
 
   .search-bar form {
