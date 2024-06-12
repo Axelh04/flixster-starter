@@ -1,37 +1,42 @@
-import { useEffect, useState } from 'react';
-import './MovieGrid.css'
-import MovieRendering from './MovieRendering';
+import { useEffect, useState } from "react";
+import "./MovieGrid.css";
+import MovieCard from "./MovieCard";
 
 const MovieGrid = () => {
+  const [movieData, setmovieData] = useState(null);
 
-    const [movieData, setData] = useState(null);
-
-    const fetchData = async () => {
-        const API_KEY = import.meta.env.VITE_APP_API_KEY
-        const response = await fetch(`https://api.themoviedb.org/3/movie/now_playing?api_key=${API_KEY}&page=1`)
-        const data = await response.json()
-        setData(data)
-      };
-
-
-      useEffect(() => {
-        // for (let moviePage = 1; moviePage < 3; moviePage++ )
-          fetchData();
-        
-      }, []);
-
-    
-    return (
-        
-        
-  <div className="right-container">
-    <div className='grid-container' >
-
-    {/* <MovieRendering data={movieData} /> */}
-
-    </div>
-  </div>
+  const fetchData = async () => {
+    const API_KEY = import.meta.env.VITE_APP_API_KEY;
+    const response = await fetch(
+      `https://api.themoviedb.org/3/movie/now_playing?api_key=${API_KEY}&page=1`
     );
-}
+    const data = await response.json();
+    setmovieData(data.results);
+  };
 
-export default MovieGrid
+  useEffect(() => {
+    // for (let moviePage = 1; moviePage < 3; moviePage++ )
+    fetchData();
+  }, []);
+  
+  console.log(movieData)
+
+  return (
+    <div className="right-container">
+      <div className="grid-container">
+        { movieData && movieData.length > 0 ? (
+          movieData.map( (value, i) => {
+          return (
+          
+          <MovieCard key={i} title={value.title} director={value.director} poster={value.poster_path} votes={value.vote_average} /> 
+        
+        )
+          })): (
+            <div>Loading...</div>
+          )}
+      </div>
+    </div>
+  );
+};
+
+export default MovieGrid;

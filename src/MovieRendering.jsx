@@ -1,19 +1,26 @@
+/* eslint-disable react/prop-types */
 
 import MovieCard from "./MovieCard";
 
-function MovieRendering(props) {
+function MovieRendering({data}) {
 
- const data = props
+    const arr = data.results
+
+    const movieGenerator  = arr.map( (value, i) => {
+
+        return (
+            <div key={i}> 
+
+                <MovieCard title={value.title} director={value.director} />
+
+            </div>
+        )
+
+    });
 
   return (
   <>
-    <div >
-      {data.map(movie => (
-        <div key={movie.release_date}>
-          <MovieCard title={movie.title} director={movie.director} />
-        </div>
-      ))}
-    </div>
+    {movieGenerator};
   </>
   );
 
