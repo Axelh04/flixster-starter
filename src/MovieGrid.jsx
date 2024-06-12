@@ -27,7 +27,7 @@ const MovieGrid = () => {
   <div className="right-container">
     <div className='grid-container' >
 
-    <MovieRendering data={movieData} />
+    {/* <MovieRendering data={movieData} /> */}
 
     </div>
   </div>
