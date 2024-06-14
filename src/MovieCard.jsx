@@ -1,17 +1,23 @@
 // import './MovieDetails.css'
 
+import './MovieCard.css'
+// import MovieDetails from './MovieDetails';
+// import MovieModal from './MovieModal'
+
 /* eslint-disable react/prop-types */
 
-function MovieCard({title, director, poster, votes }) {
+function MovieCard({title, poster, votes, id, onSelectMovie }){
+  
+  const handleChange = () => {
+    onSelectMovie(id);
+  };
 
-    console.log("movie card poster:", poster)
 
   return (
-    <div>
-      <img src = {`https://image.tmdb.org/t/p/w500${poster}`} /> 
-      <h2>{title}</h2>
-      <h3>{director}</h3>
-      <h4>{votes}</h4>
+    <div className="poster">
+      <img onClick={handleChange} id = "posterimg" src = {`https://image.tmdb.org/t/p/w500${poster}`} /> 
+      <h2  id = "title">{title}</h2>
+      <h1 id = "votes">{votes}</h1>
     </div>
   )
 }

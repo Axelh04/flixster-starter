@@ -1,0 +1,47 @@
+section {
+  height: min-content;
+  width: 80%;
+  margin-top: 25%;
+  color: white;
+  margin-left: 5%;
+}
+
+#titledetails {
+  display: inline-block;
+  margin-left: 4%;
+  width: 70%;
+}
+
+section > #titledetails > h1 {
+  font-size: 325%;
+  color: whitesmoke;
+  text-shadow: rgb(0, 0, 0) 1px 1px 30px, 1px 1px 5px #000000;
+  font-weight: bolder;
+}
+
+#modalposter {
+  display: inline-block;
+  width: 25%;
+  box-shadow: rgb(0, 0, 0) 1px 1px 30px, 1px 1px 5px #000000;
+}
+
+section > #titledetails > h3 {
+  font-size: 100%;
+  color: whitesmoke;
+  text-shadow: rgb(0, 0, 0) 1px 1px 30px, 1px 1px 5px #000000;
+  font-weight: bolder;
+
+}
+
+section > h5 {
+  font-size: 100%;
+  font-weight: lighter;
+  color: whitesmoke;
+  text-shadow: rgb(0, 0, 0) 1px 1px 30px, 1px 1px 5px #000000;
+  
+}
+
+iframe {
+  margin-top: 5%;
+  margin-left: 10%;
+}

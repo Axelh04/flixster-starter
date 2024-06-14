@@ -1,0 +1,42 @@
+.poster {
+position: relative;  
+width: 24%;
+background-color: transparent;
+margin: auto;
+margin-top: 0;
+margin-bottom:37%;
+
+
+}
+
+#posterimg {
+
+  position:absolute;
+    width: 100%;
+}
+
+#title {
+  font-size: small;
+  position:absolute;
+  margin-left: 5%;
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  width: 65%;
+  padding: 2%;
+  color: whitesmoke;
+  text-shadow: rgb(255, 255, 255) 1px 0 5px, 1px 1px 2px #000000,2px 2px 5px #000000,3px 3px 7px #000000;
+}
+
+#votes {
+  font-size: xx-large;
+  position:absolute;
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  width:min-content;
+  border-radius:100px;
+  margin-top: 0;
+  padding: 5%;
+  color: whitesmoke;
+  right:-9%;
+  margin-top:-11%;
+  text-shadow: rgb(238, 238, 238) 1px 0 8px, 0 0 5px #000000;
+
+}
