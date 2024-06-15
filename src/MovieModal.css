@@ -30,7 +30,6 @@ section > #titledetails > h3 {
   color: whitesmoke;
   text-shadow: rgb(0, 0, 0) 1px 1px 30px, 1px 1px 5px #000000;
   font-weight: bolder;
-
 }
 
 section > h5 {
@@ -38,7 +37,6 @@ section > h5 {
   font-weight: lighter;
   color: whitesmoke;
   text-shadow: rgb(0, 0, 0) 1px 1px 30px, 1px 1px 5px #000000;
-  
 }
 
 iframe {

@@ -1,42 +1,48 @@
 .poster {
-position: relative;  
-width: 24%;
-background-color: transparent;
-margin: auto;
-margin-top: 0;
-margin-bottom:37%;
+  position: relative;
+  width: 24%;
+  background-color: transparent;
+  margin: auto;
+  margin-top: 0;
+  margin-bottom: 37%;
+  transition: 0.5s;
+}
 
-
+.poster:hover {
+  opacity: 0.6;
+  margin-top: -1vh;
+}
+.poster:active {
+  opacity: 0.1;
+  transition: 0.1s;
 }
 
 #posterimg {
-
-  position:absolute;
-    width: 100%;
+  position: absolute;
+  width: 100%;
+  border-radius: 3px;
 }
 
 #title {
   font-size: small;
-  position:absolute;
+  position: absolute;
   margin-left: 5%;
-  /* background-color: rgba(0, 0, 0, 0.5); */
   width: 65%;
   padding: 2%;
   color: whitesmoke;
-  text-shadow: rgb(255, 255, 255) 1px 0 5px, 1px 1px 2px #000000,2px 2px 5px #000000,3px 3px 7px #000000;
+  text-shadow: rgb(255, 255, 255) 1px 0 5px, 1px 1px 2px #000000,
+    2px 2px 5px #000000, 3px 3px 7px #000000;
 }
 
 #votes {
   font-size: xx-large;
-  position:absolute;
-  /* background-color: rgba(0, 0, 0, 0.5); */
-  width:min-content;
-  border-radius:100px;
+  position: absolute;
+  width: min-content;
+  border-radius: 100px;
   margin-top: 0;
   padding: 5%;
   color: whitesmoke;
-  right:-9%;
-  margin-top:-11%;
-  text-shadow: rgb(238, 238, 238) 1px 0 8px, 0 0 5px #000000;
-
+  right: -9%;
+  margin-top: -11%;
+  text-shadow: rgb(238, 238, 238) 0px 0 4px, 0 0 5px #000000;
 }

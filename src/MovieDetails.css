@@ -1,27 +1,24 @@
-
-
 .null-left-container {
   background-color: rgb(22, 22, 22);
   width: 50%;
   height: 100vh;
   margin: 0;
   display: inline-block;
-  overflow-y:hidden;
+  overflow-y: hidden;
 }
 
 .null-left-container > h1 {
-
-  margin:auto;
+  margin: auto;
   margin-top: 40%;
-  font-weight:100;
+  font-weight: 100;
   font-size: 400%;
   color: rgb(83, 83, 83);
   width: 75%;
-
 }
 h1 > span {
-  color:darkgoldenrod;
-  font-weight:900;
+  color: darkgoldenrod;
+  font-weight: 900;
   font-size: 200%;
+  text-shadow: darkgoldenrod 1px 0 10px, 0 0 5px #000000;
 
 }
