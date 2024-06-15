@@ -4,16 +4,3 @@
   overflow: hidden;
 }
 
-@media (max-width: 600px) {
-  .movie-card {
-    width: 100%;
-  }
-
-  .search-bar {
-    flex-direction: column;
-  }
-
-  .search-bar form {
-    flex-direction: column;
-  }
-}

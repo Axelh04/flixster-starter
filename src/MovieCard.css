@@ -39,10 +39,35 @@
   position: absolute;
   width: min-content;
   border-radius: 100px;
-  margin-top: 0;
   padding: 5%;
   color: whitesmoke;
   right: -9%;
   margin-top: -11%;
   text-shadow: rgb(238, 238, 238) 0px 0 4px, 0 0 5px #000000;
+}
+
+#like {
+  font-size: xx-large;
+  position: absolute;
+  width: min-content;
+  border-radius: 100px;
+  padding: 5%;
+  color: whitesmoke;
+  left: -0%;
+  margin-top: 120%;
+  text-shadow: rgb(238, 238, 238) 0px 0 4px, 0 0 5px #000000;
+  cursor: pointer;
+}
+
+#watched {
+  font-size: 100;
+  position: absolute;
+  width: min-content;
+  border-radius: 100px;
+  padding: 5%;
+  color: whitesmoke;
+  right: 0;
+  margin-top: 125%;
+  text-shadow: rgb(238, 238, 238) 0px 0 4px, 0 0 5px #000000;
+  cursor: pointer;
 }
