@@ -4,7 +4,7 @@
 
 Submitted by: Axel Hernandez
 
-Estimated time spent: 60 hours spent in total
+Estimated time spent: 45 hours spent in total
 
 Deployed Application: [Flixster Deployed Site](https://flixster-starter-o5fk.onrender.com)
 
